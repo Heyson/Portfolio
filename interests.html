@@ -13,18 +13,18 @@
 </head>
 
 <body>
-    <header>
+  <header>
         <div class="row no-gutters">
-            <a href="index.html" class="col-md-4 logo">
-                
-            </a>
+            <a href="index.html" class="col-md-4 logo"></a>
             <div class="col-md-8">
-                <div class="row no-gutters bg-color-name-title">
-                    <div class="col heading">
-                         <h1 class="name">Heyson Severino</h1>
-                        <h2 class="title">Full Stack Developer</h2>
+                    <div class="row no-gutters bg-color-name-title">
+                        <div class="col heading">
+                            <h1 class="name">Heyson Severino</h1>
+                            <h2 class="title">Full Stack Developer</h2>
+                        </div>
                     </div>
-                </div>
+
+                
                 <div class="row no-gutters">
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer row">
@@ -50,6 +50,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </header>
     <section class="container-fluid">
         <div class="row">
@@ -192,8 +193,19 @@
         </div>
 
     </footer>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                    lat: 46.619261,
+                    lng: -33.134766
+                }
+            });
+        }
+    </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_9DaD7QnxGgYr5x4M2Z3wmbo-QHo74fY&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9-bfinGGbTS7DOFV-PbAdsQstUP0cfDc&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
 </body>
 
