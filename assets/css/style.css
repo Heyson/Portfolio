@@ -31,6 +31,12 @@
 .ui-menu-color-contact {
     background-color: #00798C
 }
+.ui-menu-color-interests {
+    background-color: rgba(9, 62, 206, 0.541);
+}
+.ui-menu-color-github {
+    background-color: #0073008A;
+}
 .ui-menu-color-download {
     background-color: #003D5B;
 }
