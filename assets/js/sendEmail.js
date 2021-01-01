@@ -1,24 +1,5 @@
 function sendMail(contactForm) {
-    emailjs.send("gmail", "heysonseverino.com", {
-        "from_name": contactForm.name.value, 
-        "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value
-    })
-    .then(
-        function(response) {
-            console.log("SUCCESS", response);
-
-        },
-        functino(error) {
-            console.log("FAILED", error);
-        }
-    );
-     return false;
-}
-
-/* 
-function sendMail(contactForm) {
-    emailjs.send("gmail", "rosie", {
+    emailjs.send("service_i3eyzbd","heysonseverino.com", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
         "project_request": contactForm.projectsummary.value
@@ -33,4 +14,3 @@ function sendMail(contactForm) {
     );
     return false;  // To block from loading a new page
 }
- */
