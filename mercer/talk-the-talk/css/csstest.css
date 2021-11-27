@@ -1,0 +1,690 @@
+/*Colors*/
+/*#005874 dark blue
+#00a7c7 light blue
+#3f3f3f grey
+#a6d8c7 teal
+ */
+
+/*.hide {
+  display: none;
+}*/
+
+/*Clearfix*/
+.cf:after {
+  content:" ";
+  display: table;
+  clear:both;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  color:#fff;
+  font-weight: 400;
+}
+
+.wrapper {
+  	max-width:800px;
+    height:585px;
+    padding:0;
+    border:1px solid #3f3f3f;
+    margin:0 auto;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+
+header{
+  background-color: #fff;
+  width:100%;
+  height:125px;
+  padding: 0;
+
+}
+
+.header-left {margin-top:5%;}
+
+.header-right {margin-top:0;}
+
+.header-right p{
+  font: 400 15px/18px "Open Sans",sans-serif;
+  color:#000;
+}
+
+.header-right p span {color:#005874;}
+
+.tabs {
+    margin-bottom: 0px !important;
+    margin-left: -15px;
+    margin-right: -24px;
+  }
+
+.tabs dd, .tabs .tab-title {
+    position: relative;
+    margin-bottom: 0px !important;
+    list-style: outside none none;
+    float: left;
+    width: 33%;
+    border-bottom:2px solid #fff;
+}
+
+.tabs dd > a, .tabs .tab-title > a {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    font: 700 17px/17px "Open Sans", sans-serif;
+    text-align: center;
+    color:#fff;
+}
+
+.tabs dd.active a, .tabs .tab-title.active a {color:#fff;}
+
+.tabs dd:first-child a {
+  background-color: #005874;
+  border-right:2px solid #fff;
+}
+
+.tabs dd:last-child a {background-color: #00a7c7;}
+
+.tabs dd:nth-child(2) a{
+   background-color: #3f3f3f;
+   border-right:2px solid #fff;
+}
+
+ /*Content for tabs   */
+
+.tabs-content {
+    margin-bottom: 0;
+    width: 105%;
+    margin-left: -16px; /*-54px;*/
+    height:396px;
+    position: relative;
+}
+
+.tabs-content .answer {
+  margin: 15px 35px 15px 35px;
+  position: relative;
+  top:250px;
+}
+
+.tabs-content .answer h2 {
+  font: 300 34px/34px "Open Sans", sans-serif;
+  color:#a6d8c7;
+  text-transform: uppercase;
+}
+
+.tabs-content .js-payment.answer h2 {color:#00a7c7;}
+
+.tabs-content .js-rx.answer h2 {color:#3f3f3f;}
+
+.tabs-content .answer p {
+  font: 400 15px/21px "Open Sans", sans-serif;
+  color:#fff;
+}
+
+.tabs-content .content:first-child {
+  background-color: #005874;
+  height:420px;
+
+}
+
+.tabs-content .content:nth-child(2) {
+  background-color: #3f3f3f;
+  height:420px;
+}
+
+.tabs-content .content:last-child {
+  background-color: #00a7c7;
+    height:420px;
+}
+
+/* tab one bubbles*/
+
+#bubble1 {
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  background: url('../img/copay-inactive.png') no-repeat left top;
+  width: 157px;
+  height: 83px;
+  transition:background 3.3s ease;
+ }
+
+#bubble1:hover, #bubble1.selected {
+  background: url('../img/copay-active.png') no-repeat left top;
+}
+
+#bubble2 {
+  position: absolute;
+  top: 20px;
+  left: 290px;
+  background: url('../img/out-of-pocket-max-inactive.png') no-repeat left top;
+  width: 217px;
+  height: 103px;
+  transition:background 0.3s ease;
+}
+
+#bubble2:hover, #bubble2.selected {
+  background: url('../img/out-of-pocket-max-active.png') no-repeat left top;
+}
+
+#bubble3 {
+  position: absolute;
+  top: 20px;
+  left: 550px;
+  background: url('../img/out-of-pocket-costs-inactive.png') no-repeat left top;
+  width: 207px;
+  height: 103px;
+  transition:background 0.3s ease;
+}
+
+#bubble3:hover, #bubble3.selected {
+  background: url('../img/out-of-pocket-costs-active.png') no-repeat left top;
+}
+
+#bubble4 {
+  position: absolute;
+  top: 140px;
+  left: 180px;
+  background: url('../img/coinsurance-inactive.png') no-repeat left top;
+  width: 207px;
+  height: 86px;
+  transition:background 0.3s ease;
+}
+
+#bubble4:hover, #bubble4.selected {
+  background: url('../img/coinsurance-active.png') no-repeat left top;
+}
+
+
+#bubble5 {
+  position: absolute;
+  top: 140px;
+  left: 440px;
+  background: url('../img/deductibles-inactive.png') no-repeat left top;
+  width: 207px;
+  height: 86px;
+  transition:background 0.3s ease;
+}
+
+#bubble5:hover, #bubble5.selected {
+  background: url('../img/deductibles-active.png') no-repeat left top;
+}
+
+/* tab two bubbles*/
+
+#bubble6 {
+ position: absolute;
+  top: 20px;
+  left: 90px;
+  background: url('../img/claim-inactive.png') no-repeat left top;
+  width: 157px;
+  height: 83px;
+  transition:background 0.3s ease;
+}
+
+#bubble6:hover, #bubble6.selected {
+  background: url('../img/claim-active.png') no-repeat left top;
+}
+
+#bubble7 {
+  position: absolute;
+  top: 40px;
+  left: 270px;
+  background: url('../img/paycheck-cost-inactive.png') no-repeat left top;
+  width: 207px;
+  height: 86px;
+ transition:background 0.3s ease;
+}
+
+#bubble7:hover, #bubble7.selected {
+  background: url('../img/paycheck-cost-active.png') no-repeat left top;
+}
+
+#bubble8 {
+  position: absolute;
+  top: 10px;
+  left: 470px;
+  background: url('../img/preventive-care-inactive.png') no-repeat left top;
+  width: 157px;
+  height: 83px;
+  transition:background 0.3s ease;
+}
+
+#bubble8:hover, #bubble8.selected {
+  background: url('../img/preventive-care-active.png') no-repeat left top;
+}
+
+#bubble9 {
+  position: absolute;
+  top: 90px;
+  left: 570px;
+  background: url('../img/premium-inactive.png') no-repeat left top;
+  width: 157px;
+  height: 83px;
+  transition:background 0.3s ease;
+}
+
+#bubble9:hover, #bubble9.selected {
+  background: url('../img/premium-active.png') no-repeat left top;
+}
+
+#bubble10 {
+  position: absolute;
+  top: 140px;
+  left: 50px;
+  background: url('../img/network-inactive.png') no-repeat left top;
+  width: 207px;
+  height: 100px;
+ transition:background 0.3s ease;
+}
+
+#bubble10:hover, #bubble10.selected {
+  background: url('../img/network-active.png') no-repeat left top;
+}
+
+
+#bubble11 {
+  position: absolute;
+ top: 140px;
+  left: 280px;
+  background: url('../img/allowed-amount-inactive.png') no-repeat left top;
+  width: 235px;
+  height: 86px;
+  transition:background 0.3s ease;
+}
+
+#bubble11:hover, #bubble11.selected {
+  background: url('../img/allowed-amount-active.png') no-repeat left top;
+}
+
+#bubble12 {
+  position: absolute;
+  top: 180px;
+  left: 510px;
+  background: url('../img/essential-health-benefits-inactive.png') no-repeat left top;
+  width: 207px;
+  height: 100px;
+  transition:background 0.3s ease;
+}
+
+#bubble12:hover, #bubble12.selected {
+  background: url('../img/essential-health-benefits-active.png') no-repeat left top;
+}
+  
+ /* tab three bubbles*/
+#bubble13 {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  background: url('../img/preferred-drugs-inactive.png') no-repeat left top;
+  width: 157px;
+  height: 83px;
+  transition:background 0.3s ease;
+}
+
+#bubble13:hover, #bubble13.selected {
+  background: url('../img/preferred-drugs-active.png') no-repeat left top;
+}
+
+#bubble14 {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  background: url('../img/mail-order-pharmacy-inactive.png') no-repeat left top;
+  width: 207px;
+  height: 100px;
+ transition:background 0.3s ease;
+}
+
+#bubble14:hover, #bubble14.selected {
+  background: url('../img/mail-order-pharmacy-active.png') no-repeat left top;
+}
+
+#bubble15 {
+  position: absolute;
+  top: 40px;
+  left: 420px;
+  background: url('../img/non-preferred-drugs-inactive.png') no-repeat left top;
+  width: 207px;
+  height: 100px;
+  transition:background 0.3s ease;
+}
+
+#bubble15:hover, #bubble15.selected {
+  background: url('../img/non-preferred-drugs-active.png') no-repeat left top;
+}
+
+#bubble16 {
+  position: absolute;
+  top: 10px;
+  left: 620px;
+  background: url('../img/generic-drugs-inactive.png') no-repeat left top;
+  width: 157px;
+  height: 83px;
+  transition:background 0.3s ease;
+}
+
+#bubble16:hover, #bubble16.selected {
+  background: url('../img/generic-drugs-active.png') no-repeat left top;
+}
+
+
+/*bubbles*/
+.bubble {
+  cursor: pointer;
+  display: inline-block;
+
+}
+
+.answer-copay,
+.answer-coinsurance,
+.answer-outpocket-max,
+.answer-outpocket-costs,
+.answer-coinsurance,
+.answer-deductibles,
+.answer-claim,
+.answer-paycheck-cost,
+.answer-preventive-care,
+.answer-premium,
+.answer-network,
+.answer-allowed-amount,
+.answer-essential,
+.answer-preferred-drugs,
+.answer-mail-order,
+.answer-non-preferred,
+.answer-generic-drugs,
+.header-right p  {
+  display:none;
+}
+/*intro screen for desktop*/
+#intro-screen{
+  display: block;
+  padding-top:50px;
+  width: 800px;
+  height: 420px;
+  background-color: #005874;
+  z-index: 1000;
+  position: absolute;
+  top:0px;
+}
+
+.intro-text {
+  position: relative;
+  margin: 0 auto;
+  width:530px;
+}
+
+.intro-text p{
+  font: 300 25px/30px "Open Sans", sans-serif;
+  letter-spacing: .05rem;
+}
+
+
+#intro-screen .intro-text button {
+  border:1px solid #fff;
+  font: 300 44px/44px "Open Sans", sans-serif;
+  background-color:transparent;
+  padding: .5rem 3.25rem 1.0rem 3.25rem;
+  position: relative;
+  top: 50px;
+  left: 25%;
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
+====================================================================== */
+@media only screen and (max-width: 568px) {
+
+    .tabs dd a {height:44px;}
+
+    #intro-screen {display:none;}
+  
+    header {height: 105px;}
+
+    .header-left {margin-top: 5px;}
+
+    .header-left img {width:50%;}
+
+    .header-right p {
+      display: block;
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: .5rem;
+    }
+
+    .tabs dd > a, .tabs .tab-title > a {
+        font: 700 12px/14px "Open Sans",sans-serif;
+        padding: 8px;
+    }
+
+    .tabs-content .answer h2 {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 0px;
+      font-weight: 300;
+     }
+
+    .tabs-content .answer p {
+        font-size:10px;
+        line-height: 17px;
+    }
+
+    .tabs-content .answer {
+        margin: 15px 5% 15px 5%;
+        top: 170px;
+        width: 90%;
+    }
+
+    .tabs-content .js-rx.answer {top: 170px;}
+
+    .tabs-content {width: 111%;}
+
+    #bubble1,
+    #bubble1:hover,
+    #bubble1.selected  {
+        position: absolute;
+        top: 10px;
+        /*left: 180px;*/
+        left:56%;
+        height:50px;
+        width:100px;
+        background-size: 95px;
+    }
+
+    #bubble2,
+    #bubble2:hover,
+    #bubble2.selected {
+        position: absolute;
+        top: 70px;
+        /*left: 180px;*/
+        left:56%;
+        height:55px;
+        width:110px;
+        background-size: 105px;}
+
+    #bubble3,
+    #bubble3:hover,
+    #bubble3.selected {
+        position: absolute;
+        top: 130px;
+        /*left: 110px;*/
+        left:34%;
+        width: 120px;
+        height: 60px;
+        background-size: 115px;
+    }
+
+    #bubble4, 
+    #bubble4:hover,
+    #bubble4.selected  {
+        position: absolute;
+        top: 70px;
+        /*left: 50px;*/
+        left:16%;
+        height: 50px;
+        width: 120px;
+        background-size: 115px;
+      }
+  
+     #bubble5 ,
+    #bubble5:hover,
+    #bubble5.selected  {
+        position: absolute;
+        top: 10px;
+        /*left: 50px;*/
+        left:16%;
+        height:50px;
+        width:115px;
+        background-size: 115px;
+      }
+
+    /*claim*/
+    #bubble6, 
+    #bubble6:hover,
+    #bubble6.selected {
+        position: absolute;
+        top: 10px;
+       /* left:10px;*/
+       left:3%;
+        width: 110px;
+        height: 60px;
+        background-size: 105px;
+      }
+
+
+    /*paycheck cost*/
+    #bubble7,
+    #bubble7:hover, 
+    #bubble7.selected {
+        position: absolute;
+        top: 10px;
+       /* left: 140px;*/
+       left:44%;
+        width: 125px;
+        height: 55px;
+        background-size: 125px;
+    }
+
+    #bubble8,
+    #bubble8:hover,
+    #bubble8.selected  {
+        position: absolute;
+        top: 130px;
+       /* left: 10px;*/
+       left:3%;
+        width: 110px;
+        height: 60px;
+        background-size: 105px;
+    }
+
+    #bubble9, 
+    #bubble9:hover,
+    #bubble9.selected  {
+        position: absolute;
+        top: 120px;
+ /*       left: 120px;*/
+        left:38%;
+        width: 105px;
+        height: 55px;
+        background-size: 105px;
+    }
+
+      #bubble10,
+      #bubble10:hover, 
+      #bubble10.selected {
+        position: absolute;
+        top: 70px;
+      /*  left: 50px;*/
+        left:16%;
+        width: 115px;
+        height: 60px;
+        background-size: 115px;
+    }
+
+    #bubble11,
+    #bubble11:hover,
+    #bubble11.selected {
+        position: absolute;
+        top: 70px;
+        /*left: 180px;*/
+        left:56%;
+        width: 125px;
+        height: 50px;
+        background-size: 125px;
+
+      }
+
+    /*essential health benefits*/
+    #bubble12 ,
+    #bubble12:hover,
+    #bubble12.selected {
+        position: absolute;
+        top: 160px;
+       /* left: 200px;*/
+       left:63%;
+        width: 125px;
+        height: 60px;
+        background-size: 115px;
+      }
+
+    /*preferred drugs*/
+    #bubble13,
+    #bubble13:hover,
+    #bubble13.selected  {
+        position: absolute;
+        top: 10px;
+        /*left: 40px;*/
+        left:13%;
+        width: 115px;
+        height: 70px;
+        background-size: 115px;
+      }
+
+    /*mail order pharmacy*/
+    #bubble14, 
+    #bubble14:hover,
+    #bubble14.selected  {
+      position: absolute;
+      top: 20px;
+      /*left: 170px;*/
+      left:53%;
+      width: 145px;
+      height: 70px;
+      background-size: 125px;
+    }
+
+    /*non preferred drugs*/
+    #bubble15,
+    #bubble15:hover,
+    #bubble15.selected  {
+        position: absolute;
+        top: 90px;
+       /* left: 10px;*/
+       left:3%;
+        width: 135px;
+        height: 70px;
+        background-size: 125px;
+    }
+
+    /*generic drugs*/
+    #bubble16,
+    #bubble16:hover,
+    #bubble16.selected   {
+        position: absolute;
+        top: 90px;
+        /*left: 160px;*/
+        left:50%;
+        width: 135px;
+        height: 70px;
+        background-size: 125px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 479px) {
+    .tabs dd:first-child a {
+      height:44px;
+      font: 700 12px/28px "Open Sans",sans-serif;
+    }
+
+}
