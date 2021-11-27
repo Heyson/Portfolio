@@ -1,0 +1,512 @@
+/*Colors*/
+/*#005874 dark blue
+#00a7c7 light blue
+#3f3f3f grey
+#a6d8c7 teal
+ */
+
+
+
+/*Clearfix*/
+.cf:after {
+  content:" ";
+  display: table;
+  clear:both;
+}
+
+/*
+.spacer {
+	padding: 3% 2% 0% 2%;
+}*/
+
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  color:#fff;
+  font-weight: 400;
+}
+
+.wrapper {
+  	max-width:800px;
+    height:585px;
+    padding:0;
+    padding-bottom: 0;
+    border:1px solid #3f3f3f;
+    margin:0 auto;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+
+header{
+  background-color: #fff;
+  width:100%;
+  height:125px;
+  padding: 0;
+
+}
+
+.header-left {margin-top:20px;}
+
+.header-right {margin-top:20px;}
+
+.header-right p{
+  font: 400 15px/18px "Open Sans",sans-serif;
+  color:#000;
+}
+
+.header-right p.subhead {color:#005874;}
+
+
+.tabs {
+    margin-bottom: 0px !important;
+    margin-left: -15px;
+    margin-right: -24px;
+  }
+
+
+.tabs dd, .tabs .tab-title {
+    position: relative;
+    margin-bottom: 0px !important;
+    list-style: outside none none;
+    float: left;
+    width: 33%;
+    border-bottom:2px solid #fff;
+
+}
+
+.tabs dd > a, .tabs .tab-title > a {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    font: 700 17px/17px "Open Sans", sans-serif;
+    text-align: center;
+    color:#fff;
+}
+
+.tabs dd.active a, .tabs .tab-title.active a {color:#fff;}
+
+.tabs dd:first-child a {
+  background-color: #005874;
+  border-right:2px solid #fff;
+}
+
+.tabs dd:last-child a {
+   background-color: #00a7c7;
+}
+
+.tabs dd:nth-child(2) a{
+   background-color: #3f3f3f;
+   border-right:2px solid #fff;
+}
+
+ /*Content for tabs   */
+
+.tabs-content {
+    margin-bottom: 0;
+    width: 800px;
+    margin-left: -16px;
+    /*margin-right: -54px;*/
+    height:396px;
+    position: relative;
+}
+
+.tabs-content .answer {
+  margin: 15px 35px 15px 35px;
+  position: relative;
+  top:250px;
+}
+
+.tabs-content .js-rx.answer {
+   top:120px;
+}
+
+.tabs-content .answer h2 {
+  font: 300 34px/34px "Open Sans", sans-serif;
+  color:#a6d8c7;
+  text-transform: uppercase;
+}
+
+.tabs-content .js-payment.answer h2 {color:#00a7c7;}
+
+.tabs-content .js-rx.answer h2 {color:#3f3f3f;}
+
+.tabs-content .answer p {
+  font: 400 15px/21px "Open Sans", sans-serif;
+  color:#fff;
+}
+
+.tabs-content .content:first-child {
+  background-color: #005874;
+  height:420px;
+
+}
+
+.tabs-content .content:nth-child(2) {
+  background-color: #3f3f3f;
+  height:420px;
+}
+
+.tabs-content .content:last-child {
+  background-color: #00a7c7;
+    height:420px;
+}
+
+/* tab one bubbles*/
+
+#bubble1 {
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  padding: 30px 10px 0 10px;
+}
+
+#bubble2 {
+  position: absolute;
+  top: 20px;
+  left: 290px;
+  padding: 30px 10px 0 10px;
+}
+
+#bubble3 {
+  position: absolute;
+  top: 20px;
+  left: 550px;
+  padding: 30px 10px 0 10px;
+}
+
+#bubble4 {
+  position: absolute;
+  top: 140px;
+  left: 180px;
+  padding: 30px 10px 0 10px;
+}
+
+#bubble5 {
+  position: absolute;
+  top: 140px;
+  left: 440px;
+  padding: 30px 10px 0 10px;
+}
+
+/* tab two bubbles*/
+
+#bubble6 {
+ position: absolute;
+  top: 20px;
+  left: 90px;
+  padding: 30px 10px 0px;
+}
+
+#bubble7 {
+  position: absolute;
+  top: 40px;
+  left: 270px;
+  padding: 30px 10px 0 10px;
+}
+
+#bubble8 {
+  position: absolute;
+  top: 10px;
+  left: 470px;
+  padding: 30px 10px 0 10px;
+}
+
+#bubble9 {
+  position: absolute;
+  top: 90px;
+left: 570px;
+  padding: 30px 10px 0 10px;
+}
+
+#bubble10 {
+  position: absolute;
+  top: 140px;
+  left: 50px;
+  padding: 30px 10px 0 10px;
+}
+
+#bubble11 {
+  position: absolute;
+ top: 140px;
+  left: 280px;
+  padding: 30px 10px 0 10px;
+}
+
+#bubble12 {
+  position: absolute;
+  top: 180px;
+  left: 510px;
+  padding: 30px 10px 0 10px;
+}
+  
+ /* tab three bubbles*/
+#bubble13 {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  padding: 20px 0px 0px;
+}
+
+#bubble14 {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  padding: 30px 10px 0 10px;
+}
+
+#bubble15 {
+  position: absolute;
+  top: 40px;
+  left: 420px;
+  padding: 30px 10px 0 10px;
+}
+#bubble16 {
+  position: absolute;
+  top: 10px;
+  left: 620px;
+  padding: 20px 0px 0px;
+}
+
+
+/*bubbles*/
+.bubble {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.2;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/*basic tab bubbles*/
+.bubble-basic-small {
+  background: url('../img/bubble-small-inactive.png') no-repeat left top;
+  width: 157px;
+  height: 83px;
+  overflow: hidden;
+}
+
+.bubble-basic-small:hover, .bubble-basic-small:.selected {
+  background: url('../img/bubble-small-active.png') no-repeat left top;
+}
+
+.bubble-basic-medium {
+  background: url('../img/bubble-medium-inactive.png') no-repeat left top;
+  width: 205px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.bubble-basic-medium:hover, .bubble-basic-medium.selected {
+  background: url('../img/bubble-medium-active.png') no-repeat left top;
+}
+
+.bubble-basic-medium-reverse {
+  background: url('../img/bubble-medium-inactive-reverse.png') no-repeat left top;
+  width: 205px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.bubble-basic-medium-reverse:hover, .bubble-basic-medium-reverse.selected {
+  background: url('../img/bubble-medium-active-reverse.png') no-repeat left top;
+}
+
+.bubble-basic-large {
+  background: url('../img/bubble-large-inactive.png') no-repeat left top;
+  width: 205px;
+  height: 86px;
+  overflow: hidden;
+}
+
+.bubble-basic-large:hover, .bubble-basic-large.selected {
+  background: url('../img/bubble-large-active.png') no-repeat left top;
+}
+
+.bubble-basic-large-reverse {
+  background: url('../img/bubble-large-inactive-reverse.png') no-repeat left top;
+  width: 205px;
+  height: 86px;
+  overflow: hidden;
+}
+
+.bubble-basic-large-reverse:hover, .bubble-basic-large-reverse.selected {
+  background: url('../img/bubble-large-active-reverse.png') no-repeat left top;
+}
+
+/*payment tab bubbles*/
+
+.bubble-payment-small {
+  background: url('../img/bubble-payment-small-inactive.png') no-repeat left top;
+  width: 157px;
+  height: 83px;
+  overflow: hidden;
+}
+
+.bubble-payment-small:hover, .bubble-payment-small.selected {
+  background: url('../img/bubble-small-active.png') no-repeat left top;
+}
+
+.bubble-payment-small-reverse {
+  background: url('../img/bubble-payment-small-inactive-reverse.png') no-repeat left top;
+  width: 157px;
+  height: 83px;
+  overflow: hidden;
+}
+
+.bubble-payment-small-reverse:hover, .bubble-payment-small-reverse.selected {
+  background: url('../img/bubble-small-active-reverse.png') no-repeat left top;
+}
+
+.bubble-payment-medium {
+  background: url('../img/bubble-payment-medium-inactive.png') no-repeat left top;
+  width: 205px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.bubble-payment-medium:hover, .bubble-payment-medium.selected {
+  background: url('../img/bubble-payment-medium-active.png') no-repeat left top;
+}
+
+.bubble-payment-medium-reverse {
+  background: url('../img/bubble-payment-medium-inactive-reverse.png') no-repeat left top;
+  width: 205px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.bubble-payment-medium-reverse:hover, .bubble-payment-medium-reverse.selected {
+  background: url('../img/bubble-payment-medium-active-reverse.png') no-repeat left top;
+}
+
+.bubble-payment-large {
+  background: url('../img/bubble-payment-large-inactive.png') no-repeat left top;
+  width: 235px;
+  height: 86px;
+  overflow: hidden;
+}
+
+.bubble-payment-large:hover, .bubble-payment-large.selected {
+  background: url('../img/bubble-payment-large-active.png') no-repeat left top;
+}
+
+.bubble-payment-large-reverse {
+  background: url('../img/bubble-payment-large-inactive-reverse.png') no-repeat left top;
+  width: 205px;
+  height: 86px;
+  overflow: hidden;
+}
+
+.bubble-payment-large-reverse:hover, .bubble-payment-large-reverse.selected {
+  background: url('../img/bubble-payment-large-active-reverse.png') no-repeat left top;
+}
+
+/*RX Bubbles*/
+
+.bubble-rx-small {
+  background: url('../img/bubble-rx-small-inactive.png') no-repeat left top;
+  width: 157px;
+  height: 83px;
+  overflow: hidden;
+}
+
+.bubble-rx-small:hover, .bubble-rx-small.selected {
+  background: url('../img/bubble-small-active.png') no-repeat left top;
+}
+
+.bubble-rx-small-reverse {
+  background: url('../img/bubble-rx-small-inactive-reverse.png') no-repeat left top;
+  width: 157px;
+  height: 83px;
+  overflow: hidden;
+}
+
+.bubble-rx-small-reverse:hover, .bubble-rx-small-reverse.selected {
+  background: url('../img/bubble-small-active-reverse.png') no-repeat left top;
+}
+
+.bubble-rx-medium {
+  background: url('../img/bubble-rx-medium-inactive.png') no-repeat left top;
+  width: 205px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.bubble-rx-medium:hover, .bubble-rx-medium.selected {
+  background: url('../img/bubble-medium-active.png') no-repeat left top;
+}
+
+.bubble-rx-medium-reverse {
+  background: url('../img/bubble-rx-medium-inactive-reverse.png') no-repeat left top;
+  width: 205px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.bubble-payment-medium-reverse:hover, .bubble-payment-medium-reverse.selected {
+  background: url('../img/bubble-medium-active-reverse.png') no-repeat left top;
+}
+
+
+.answer-copay,
+.answer-coinsurance,
+.answer-outpocket-max,
+.answer-outpocket-costs,
+.answer-coinsurance,
+.answer-deductibles,
+.answer-claim,
+.answer-paycheck-cost,
+.answer-preventive-care,
+.answer-premium,
+.answer-network,
+.answer-allowed-amount,
+.answer-essential,
+.answer-preferred-drugs,
+.answer-mail-order,
+.answer-non-preferred,
+.answer-generic-drugs  {
+  display:none;
+}
+
+
+#intro-screen{
+  display: block;
+  padding-top:50px;
+  width: 800px;
+  height: 420px;
+  background-color: #005874;
+  z-index: 1000;
+  position: absolute;
+  top:0px;
+
+
+}
+
+.intro-text {
+  position: relative;
+  margin: 0 auto;
+  width:530px;
+}
+
+.intro-text p{
+  font: 300 25px/30px "Open Sans", sans-serif;
+  letter-spacing: .05rem;
+}
+
+
+#intro-screen .intro-text button {
+  border:1px solid #fff;
+  font: 300 44px/44px "Open Sans", sans-serif;
+  background-color:transparent;
+  padding: .5rem 3.25rem 1.0rem 3.25rem;
+  position: relative;
+  top: 50px;
+  left: 130px;
+}
+
+
+
+
+
