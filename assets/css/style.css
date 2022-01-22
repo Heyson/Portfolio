@@ -375,6 +375,17 @@ button[type="submit"] {
     background-color: #e84610;
 }
 
+/*-------------------------------------------Portfolio Carousel*/
+#carouselExampleIndicators {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+}
+
+.card-deck .card {
+    margin-bottom: 15px;
+}
+
 /*------------------------------------------Google Maps*/
 
 div#map {min-height: 360px;}
