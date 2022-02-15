@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+html {
+    scroll-behavior: smooth; }
 /* -----------------------------------------Colors */
+body {
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    background: linear-gradient(45deg, #8bd3df, #217381, #9365c1);
+    
+    background-size: 100% 100%;
+
+    -webkit-animation: AnimationName 90s ease infinite;
+    -moz-animation: AnimationName 90s ease infinite;
+    animation: AnimationName 90s ease infinite;
+}
 
 .bg-color-name-title {
     background-color: #30638E;
@@ -95,7 +109,7 @@ header {
 
 
 .logo {
-    background: url("../images/hs_logo.png");
+    background-image: url("../images/hs_logo.png");
     background-color: #000000;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,6 +153,8 @@ header {
 
 #nav {
     margin: 0;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #fff;  
 }
 
 #nav li {
@@ -157,6 +173,7 @@ header {
     text-decoration: none;
     color: #ffffff;
     height: 120px;
+    border-left: 1px solid #FFF;
 }
 
 .menuitem a i {
@@ -375,6 +392,11 @@ button[type="submit"] {
     background-color: #e84610;
 }
 
+.carousel-item {
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
 /*-------------------------------------------Portfolio Carousel*/
 #carouselExampleIndicators {
     padding-left: 0px;
@@ -384,8 +406,32 @@ button[type="submit"] {
 
 .card-deck .card {
     margin-bottom: 15px;
+    border: 1px solid #FFF;
 }
+/*----------------------------------------------------Lazy Loading*/
 
+  .inline-photo {
+    opacity: 0;
+    -webkit-transform: translateY(4em) rotateZ(0deg);
+    transform: translateY(4em) rotateZ(0deg);
+    -webkit-transition: opacity 0.4s 0.25s ease-out, -webkit-transform 1s 0.25s cubic-bezier(0, 1, 0.3, 1);
+    transition: opacity 0.4s 0.25s ease-out, -webkit-transform 1s 0.25s cubic-bezier(0, 1, 0.3, 1);
+    transition: transform 1s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.4s 0.25s ease-out;
+    transition: transform 1s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.4s 0.25s ease-out, -webkit-transform 1s 0.25s cubic-bezier(0, 1, 0.3, 1);
+    will-change: transform, opacity; }
+  
+  .inline-photo.is-visible {
+    opacity: 1;
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg); }
+  
+  .grow:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+    -webkit-box-shadow: 14px 11px 45px -16px rgba(54, 83, 92, 0.75);
+    -moz-box-shadow: 14px 11px 45px -16px rgba(54, 83, 92, 0.75);
+    box-shadow: 14px 11px 45px -16px rgba(54, 83, 92, 0.75); }
+  
 /*------------------------------------------Google Maps*/
 
 div#map {min-height: 360px;}
