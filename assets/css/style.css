@@ -411,6 +411,12 @@ button[type="submit"] {
     border: 1px solid #FFF;
 }
 
+.card-deck-title {
+    color: #FFF;
+    padding: 30px;
+    text-align: center;
+}
+
 .carousel-inner {
     position: relative;
     width: 100%;
