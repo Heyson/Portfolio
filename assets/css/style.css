@@ -423,6 +423,12 @@ button[type="submit"] {
     height: 500px;
     overflow: hidden;
 }
+
+.card-small {
+    min-width: 100px;
+    max-width: 300px;
+    
+}
 /*----------------------------------------------------Lazy Loading*/
 
   .inline-photo {
