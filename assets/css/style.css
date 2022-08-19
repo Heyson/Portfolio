@@ -16,6 +16,7 @@ body {
     animation: AnimationName 90s ease infinite;
 }
 
+
 .bg-color-name-title {
     background-color: #30638E;
 }
@@ -429,6 +430,17 @@ button[type="submit"] {
     max-width: 300px;
     
 }
+/* Makes in Cards in Portfolio animate on hover 
+ .static:hover {
+    opacity:0;
+  }
+  */
+.static {
+    position:absolute;
+    background: white;
+  }
+  
+ 
 /*----------------------------------------------------Lazy Loading*/
 
   .inline-photo {
@@ -452,7 +464,15 @@ button[type="submit"] {
     -webkit-box-shadow: 14px 11px 45px -16px rgba(54, 83, 92, 0.75);
     -moz-box-shadow: 14px 11px 45px -16px rgba(54, 83, 92, 0.75);
     box-shadow: 14px 11px 45px -16px rgba(54, 83, 92, 0.75); }
+
+    .grow img:hover{
+        opacity: 0;
+    }
   
+hr {
+    color: #fff !important; 
+    background-color: #fff;
+}
 /*------------------------------------------Google Maps*/
 
 div#map {min-height: 360px;}
