@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-/*-------------------------------------------Image preloading */
+/*-------------------------------------------Image preloading 
 #preload-01 { background: url(assets/images/dcom1.gif) no-repeat;
     width: 100%;
     height: 100%;
     background-size: contain; }
-    
+
 #preload-02 { background: url(http://domain.tld/image-02.png) no-repeat -9999px -9999px; }
-#preload-03 { background: url(http://domain.tld/image-03.png) no-repeat -9999px -9999px; }
+#preload-03 { background: url(http://domain.tld/image-03.png) no-repeat -9999px -9999px; }*/
 
 
 
