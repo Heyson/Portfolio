@@ -8,8 +8,8 @@ body {
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
-    background: linear-gradient(45deg, #8bd3df, #217381, #9365c1);
-    
+   /* background: linear-gradient(45deg, #8bd3df, #217381, #9365c1);*/
+    background-color: #333;
     background-size: 100% 100%;
 
     -webkit-animation: AnimationName 90s ease infinite;
@@ -23,11 +23,13 @@ body {
 }
 
 .bg-color-three-reasons {
-    background-color: #ffffff;
+    background-color: #333;
+    color: #fff;
 }
 
 .bg-color-personal-info {
-    background-color: #f4f4f4;
+    background-color: #EDAE49;
+    color: #fff;
 }
 
 .bg-color-work-history {
@@ -35,7 +37,18 @@ body {
 }
 
 .bg-color-contact {
-    background-color: #fff;
+    color: #fff;
+}
+
+.form-control {
+    
+ background-color:  #00798C;
+   color: #fff;
+   margin-top: 20px;
+}
+
+::placeholder {
+    color: #fff;
 }
 
 .ui-menu-color-home {
@@ -45,7 +58,7 @@ body {
     background-color: #D1495B;
 }
 .ui-menu-color-contact {
-    background-color: #00798C
+    background-color: #00798C;
 }
 .ui-menu-color-interests {
     background-color: rgba(9, 62, 206, 0.541);
