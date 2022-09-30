@@ -19,8 +19,9 @@ body {
 
 
 .bg-color-name-title {
-    background-color: #30638E;
+        background: linear-gradient(45deg, black, transparent);
 }
+
 
 .bg-color-three-reasons {
     background-color: #333;
