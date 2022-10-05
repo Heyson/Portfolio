@@ -470,7 +470,7 @@ button[type="submit"] {
     border-radius: 5px;
 }
 
-.carousel-indicators li, .carousel-control-prev-icon, {
+.carousel-indicators li, .carousel-control-prev-icon {
   background-color: #007bff;
 }
 
