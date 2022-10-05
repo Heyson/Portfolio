@@ -470,6 +470,10 @@ button[type="submit"] {
     border-radius: 5px;
 }
 
+.carousel-indicators li {
+  background-color: #007bff;
+}
+
 .card-small {
     min-width: 100px;
     max-width: 300px;
