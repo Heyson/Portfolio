@@ -14,7 +14,7 @@ body {
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
    /* background: linear-gradient(45deg, #8bd3df, #217381, #9365c1);*/
-    background-color: #333;
+    background-color: #fff;
     background-size: 100% 100%;
 
     -webkit-animation: AnimationName 90s ease infinite;
