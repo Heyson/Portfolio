@@ -448,7 +448,7 @@ button[type="submit"] {
     border: 1px solid #fff;
     margin-left: auto;
     margin-right: auto;
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 5px;
 
 }
@@ -495,7 +495,7 @@ button[type="submit"] {
 .static {
     position:absolute;
     background: white;
-    filter: grayscale(85%);
+    /*filter: grayscale(85%); -------Grayscale effect*/
   }
   
 
@@ -543,6 +543,18 @@ div#map {min-height: 360px;}
 
 /* -----------------------------------------Media Queries */
 
+/* Add this for better spacing on small screens */
+@media (max-width: 1550px) {
+  .card-deck .grow {
+    margin-bottom: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .grow:hover {
+    transition: all .4s ease-in-out;
+    transform: scale(1.02);}
+}
+
 @media(min-width: 992px) {
     .center-form {
     padding-top: 30px;
@@ -552,4 +564,5 @@ div#map {min-height: 360px;}
 }
 
 }
+
 
