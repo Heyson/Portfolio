@@ -462,7 +462,7 @@ button[type="submit"] {
 .carousel-inner {
   aspect-ratio: 16 / 9;
   width: 100%;
-  max-height: 500px;
+ /* max-height: 500px;*/
 }
 
 .carousel-inner {
@@ -470,7 +470,7 @@ button[type="submit"] {
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
-    height: auto;
+   /* height: auto;*/
     overflow: hidden;
     border: 1px solid #fff;
     border-radius: 5px;
