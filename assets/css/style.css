@@ -404,7 +404,6 @@ footer {
 .center-form {
     padding-top: 10px;
     margin: 0 auto;
-    max-width: 70%;
 }
 
 button[type="submit"] {
@@ -560,7 +559,7 @@ div#map {min-height: 360px;}
     padding-top: 30px;
     min-height: 240px;
     margin: 0 auto;
-    max-width: 50%;
+    
 }
 
 }
