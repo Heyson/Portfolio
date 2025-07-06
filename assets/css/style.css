@@ -156,7 +156,7 @@ header {
     font-weight: 200;
     font-size: 28px;
     margin-top: 20px;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
     color: #ffffff;
 }
 
@@ -468,11 +468,11 @@ button[type="submit"] {
 .carousel-inner {
     position: relative;
     width: 100%;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
    /* height: auto;*/
     overflow: hidden;
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
     border-radius: 5px;
 }
 
