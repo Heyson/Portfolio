@@ -43,25 +43,25 @@ body {
 }
 
 .bg-color-contact {
-    color: #fff;
+    color: #777;
 }
 
 .form-control {
     
  background-color:  #00798C;
-   color: #fff;
+   color: #777;
    margin-top: 20px;
 }
 
 ::placeholder {
-    color: #fff;
+    color: #777;
 }
 
 .ui-menu-color-home {
-    background-color: #EDAE49;
+    background-color: #024b6f;
 }
 .ui-menu-color-resume {
-    background-color: #D1495B;
+    background-color: #035b87;
 }
 .ui-menu-color-contact {
     background-color: #00798C;
@@ -70,10 +70,10 @@ body {
     background-color: rgba(9, 62, 206, 0.541);
 }
 .ui-menu-color-github {
-    background-color: #0073008A;
+    background-color: #035b87;
 }
 .ui-menu-color-download {
-    background-color: #003D5B;
+    background-color: #035b87;
 }
 
 /* -----------------------------------------Special paddings/margins/text  */
@@ -115,6 +115,16 @@ h4 {
     margin-top: 25px;
     margin-bottom: 40px;
     color: #fff;
+}
+
+.history-heading,
+.section-heading-2 {
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    color: #777;
+    text-align: center;
 }
 /* -----------------------------------------Heading */
 header {
@@ -557,6 +567,7 @@ div#map {min-height: 360px;}
 @media(min-width: 992px) {
     .center-form {
     padding-top: 30px;
+    padding-bottom: 40px;
     min-height: 240px;
     margin: 0 auto;
     
